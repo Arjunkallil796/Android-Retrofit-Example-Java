@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="8dp"
+    tools:context=".SecondActivity">
+
+
+    <Button
+        android:id="@+id/btn_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Back"
+        android:onClick="onBackPressed"
+        android:background="#00000000"/>
+
+    <EditText
+        android:id="@+id/edt_ttl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_back"
+        android:layout_margin="8dp"
+        android:hint="Title"
+        android:textSize="13dp"/>
+
+    <EditText
+        android:id="@+id/edt_cntnt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edt_ttl"
+        android:layout_margin="8dp"
+        android:hint="Content"
+        android:textSize="13dp"/>
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edt_cntnt"
+        android:layout_margin="8dp"
+        android:text="Submit"
+        android:onClick="onSubmitClicked"/>
+
+</RelativeLayout>
